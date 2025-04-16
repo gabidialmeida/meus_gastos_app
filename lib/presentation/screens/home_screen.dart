@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gastos_app/presentation/screens/notification_settings.dart';
 import 'package:gastos_app/presentation/widgets/expense_form.dart';
 
 class HomeScreen extends StatefulWidget {

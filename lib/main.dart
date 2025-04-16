@@ -1,19 +1,10 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:gastos_app/presentation/screens/home_screen.dart';
 import 'package:gastos_app/presentation/widgets/notification_handler.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // Inicializa o handler de notificações
-  try {
-    await NotificationHandler.initialize();
-  } catch (e) {
-    log("Erro na inicialização: $e");
-  }
-  
+  await NotificationHandler.initialize();
   runApp(const MyApp());
 }
 
